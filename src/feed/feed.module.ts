@@ -1,9 +1,7 @@
 import { Module } from '@nestjs/common';
-import { FeedService } from './controllers/feed.service';
-import { FeedController } from './controllers/feed.controller';
+import { FeedService } from './services/feed.service';
 
 @Module({
-  providers: [FeedService],
-  controllers: [FeedController]
+  providers: [FeedService]
 })
 export class FeedModule {}
